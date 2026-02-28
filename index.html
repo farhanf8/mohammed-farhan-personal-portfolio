@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mohammed Farhan | Digital Marketer</title>
+
+    <!-- SEO & Domain Information -->
+    <link rel="canonical" href="https://farhann.in/">
+    <meta property="og:title" content="Mohammed Farhan | Digital Marketer">
+    <meta property="og:description"
+        content="Helping brands increase visibility, generate qualified leads, and scale with data-driven digital systems.">
+    <meta property="og:url" content="https://farhann.in/">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="electric-border.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Three.js (Required for background) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP (Required for nav) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <!-- Background Animation -->
+    <div id="pixel-snow-container" class="pixel-snow-container"></div>
+
+    <!-- Mouse Cursor Animation -->
+    <div style="position: fixed; top: 0; left: 0; z-index: 50; pointer-events: none; width: 100%; height: 100%;">
+        <canvas id="fluid" style="width: 100vw; height: 100vh; display: block;"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <div class="pill-nav-container">
+        <nav class="pill-nav" aria-label="Primary"
+            style="--base: #0f172a; --pill-bg: #1e293b; --hover-text: #fff; --pill-text: #a0a0a0;">
+            <a class="pill-logo" href="#home" aria-label="Home" id="pill-logo">
+                <span style="font-size: 1.2rem; font-weight: 700; color: #fff;">MF.</span>
+            </a>
+
+            <div class="pill-nav-items desktop-only" id="pill-nav-items">
+                <ul class="pill-list" role="menubar">
+                    <li role="none">
+                        <a role="menuitem" href="#about" class="pill">
+                            <span class="hover-circle" aria-hidden="true"></span>
+                            <span class="label-stack">
+                                <span class="pill-label">About</span>
+                                <span class="pill-label-hover" aria-hidden="true">About</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="#skills" class="pill">
+                            <span class="hover-circle" aria-hidden="true"></span>
+                            <span class="label-stack">
+                                <span class="pill-label">Skills</span>
+                                <span class="pill-label-hover" aria-hidden="true">Skills</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="#services" class="pill">
+                            <span class="hover-circle" aria-hidden="true"></span>
+                            <span class="label-stack">
+                                <span class="pill-label">Services</span>
+                                <span class="pill-label-hover" aria-hidden="true">Services</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="#contact" class="pill">
+                            <span class="hover-circle" aria-hidden="true"></span>
+                            <span class="label-stack">
+                                <span class="pill-label">Contact</span>
+                                <span class="pill-label-hover" aria-hidden="true">Contact</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="mobile-menu-button mobile-only" id="hamburger-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu-popover mobile-only" id="mobile-menu"
+            style="--base: #0f172a; --pill-bg: #1e293b; --hover-text: #fff; --pill-text: #fff;">
+            <ul class="mobile-menu-list">
+                <li><a href="#about" class="mobile-menu-link">About</a></li>
+                <li><a href="#skills" class="mobile-menu-link">Skills</a></li>
+                <li><a href="#services" class="mobile-menu-link">Services</a></li>
+                <li><a href="#contact" class="mobile-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <div class="magnet-wrapper" data-padding="20" data-strength="1.5">
+            <div class="magnet-inner">
+                <a href="https://www.linkedin.com/in/mohammed-farhanf8" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <div class="magnet-wrapper" data-padding="20" data-strength="1.5">
+            <div class="magnet-inner">
+                <a href="https://www.instagram.com/faarr.n_?igsh=MTFhMWk5amd3aDJuMw==" target="_blank"
+                    class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>MOHAMMED FARHAN N</h1>
+                <p class="hero-subtitle">DIGITAL MARKETING STRATEGIST IN CALICUT | KERALA | INDIA</p>
+                <p class="hero-professional-title">Helping brands increase visibility, generate qualified leads, and
+                    scale with data-driven digital systems.</p>
+                <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
+                    <div class="magnet-inner">
+                        <a href="#contact" class="btn">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero.jpg" alt="Mohammed Farhan">
+            </div>
+        </div>
+    </header>
+
+    <!-- Scroll Velocity Divider -->
+    <div class="scroll-velocity"
+        data-texts='["SEO OPTIMIZATION • DIGITAL MARKETING • GOOGLE ADS • SOCIAL MEDIA", "CONTENT STRATEGY • LEAD GENERATION • EMAIL MARKETING • AUTOMATION"]'
+        data-velocity="250"></div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container stats-container">
+            <div class="stat-box">
+                <div class="stat-number count-up" data-to="20" data-suffix="+">0</div>
+                <div class="stat-text">PROJECTS DELIVERED</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number count-up" data-to="15" data-suffix="+">0</div>
+                <div class="stat-text">WEBSITES BUILT</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number count-up" data-to="10" data-suffix="+">0</div>
+                <div class="stat-text">SEO CAMPAIGNS</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number count-up" data-to="25" data-suffix="+">0</div>
+                <div class="stat-text">AUTOMATIONS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate digital marketer helping businesses grow online
+                through SEO, Social Media Marketing, Google Ads and Content Strategy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li class="magnet-wrapper" data-padding="15" data-strength="2">
+                    <div class="magnet-inner skill-inner electric-border" data-color="#6366f1"><span
+                            style="position: relative; z-index: 5;">Search Engine Optimization (SEO)</span></div>
+                </li>
+                <li class="magnet-wrapper" data-padding="15" data-strength="2">
+                    <div class="magnet-inner skill-inner electric-border" data-color="#ec4899"><span
+                            style="position: relative; z-index: 5;">Google Ads & Facebook Ads</span></div>
+                </li>
+                <li class="magnet-wrapper" data-padding="15" data-strength="2">
+                    <div class="magnet-inner skill-inner electric-border" data-color="#6366f1"><span
+                            style="position: relative; z-index: 5;">Social Media Marketing</span></div>
+                </li>
+                <li class="magnet-wrapper" data-padding="15" data-strength="2">
+                    <div class="magnet-inner skill-inner electric-border" data-color="#ec4899"><span
+                            style="position: relative; z-index: 5;">Content Marketing</span></div>
+                </li>
+                <li class="magnet-wrapper" data-padding="15" data-strength="2">
+                    <div class="magnet-inner skill-inner electric-border" data-color="#6366f1"><span
+                            style="position: relative; z-index: 5;">Email Marketing</span></div>
+                </li>
+                <li class="magnet-wrapper" data-padding="15" data-strength="2">
+                    <div class="magnet-inner skill-inner electric-border" data-color="#ec4899"><span
+                            style="position: relative; z-index: 5;">Video Editing</span></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-box electric-border" data-color="#6366f1">
+                    <h3>SEO Optimization</h3>
+                    <p>Improve website ranking and organic traffic.</p>
+                    <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
+                        <div class="magnet-inner">
+                            <a href="#contact" class="btn service-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box electric-border" data-color="#ec4899">
+                    <h3>Paid Advertising</h3>
+                    <p>High converting Google & Meta ad campaigns.</p>
+                    <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
+                        <div class="magnet-inner">
+                            <a href="#contact" class="btn service-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box electric-border" data-color="#6366f1">
+                    <h3>Social Media Growth</h3>
+                    <p>Brand awareness and audience engagement strategy.</p>
+                    <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
+                        <div class="magnet-inner">
+                            <a href="#contact" class="btn service-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section id="process" class="process-section">
+        <div class="container process-container">
+            <h2>The Process</h2>
+
+            <div class="timeline">
+                <div class="step">
+                    <p class="step-title">1. Audit & Research</p>
+                    <p class="step-description">Understanding your market, competitors, and growth opportunities.</p>
+                </div>
+
+                <div class="step">
+                    <p class="step-title">2. Strategy & Structure</p>
+                    <p class="step-description">Building a clear SEO and funnel architecture.</p>
+                </div>
+
+                <div class="step">
+                    <p class="step-title">3. Execution</p>
+                    <p class="step-description">Development, optimization, and automation setup.</p>
+                </div>
+
+                <div class="step">
+                    <p class="step-title">4. Performance Tracking</p>
+                    <p class="step-description">Data-driven improvements and testing.</p>
+                </div>
+
+                <div class="step">
+                    <p class="step-title">5. Scaling</p>
+                    <p class="step-description">Turning initial traction into consistent growth.</p>
+                </div>
+            </div>
+
+            <div class="process-btn-wrapper" style="text-align: center; margin-top: 4rem;">
+                <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
+                    <div class="magnet-inner">
+                        <a href="#contact" class="btn service-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Building brands that dominate search and drive results.</h2>
+            <p>Currently accepting a limited number of projects.</p>
+
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">START A PROJECT</a>
+                <a href="#contact" class="btn outline">BOOK A CALL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="contact-info">
+            <p>Speak with the most verified Freelance digital marketing expert in kozhikode</p>
+            <h2>Contact Me..</h2>
+
+            <div class="info-item">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <span>farhanf8786@gmail.com</span>
+            </div>
+
+            <div class="info-item">
+                <div class="icon"><i class="fas fa-phone"></i></div>
+                <span>+91 9048488682</span>
+            </div>
+
+            <div class="info-item">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>KOZHIKODE , FEROKE</span>
+            </div>
+        </div>
+
+        <form class="contact-form electric-border" data-color="#ec4899">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Your Number">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Enter your message: (requirement, quantity etc...)"></textarea>
+            <div class="magnet-wrapper" data-padding="20" data-strength="1.5" style="width: 100%;">
+                <div class="magnet-inner" style="width: 100%;">
+                    <button type="submit" class="send-btn" style="width: 100%;">Send</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-content-wrapper">
+                <div class="footer-brand">
+                    <h4 style="margin: 0; font-size: 1.2rem; font-weight: 700; color: #fff;">MOHAMMED FARHAN N</h4>
+                    <p
+                        style="margin: 0.5rem 0 1.5rem 0; font-size: 0.95rem; color: var(--text-muted); max-width: 300px;">
+                        SEO-driven websites and growth systems for modern businesses.</p>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p>© 2026 Mohammed Farhan | Digital Marketer</p>
+            </div>
+
+            <div class="footer-socials-wrapper">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohammed-farhanf8" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/faarr.n_?igsh=MTFhMWk5amd3aDJuMw==" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919048488682" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <a href="#home" class="back-to-top" title="Back to Top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="background.js"></script>
+    <script src="magnet.js"></script>
+    <script src="nav.js"></script>
+    <script src="cursor.js"></script>
+    <script src="velocity.js"></script>
+    <script src="countup.js"></script>
+    <script src="electric-border.js"></script>
+</body>
+
+</html>
