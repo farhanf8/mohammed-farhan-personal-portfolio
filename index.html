@@ -13,7 +13,6 @@
     <meta property="og:url" content="https://farhann.in/">
     <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="electric-border.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome CDN -->
@@ -28,11 +27,6 @@
 <body>
     <!-- Background Animation -->
     <div id="pixel-snow-container" class="pixel-snow-container"></div>
-
-    <!-- Mouse Cursor Animation -->
-    <div style="position: fixed; top: 0; left: 0; z-index: 50; pointer-events: none; width: 100%; height: 100%;">
-        <canvas id="fluid" style="width: 100vw; height: 100vh; display: block;"></canvas>
-    </div>
 
     <!-- Navigation -->
     <div class="pill-nav-container">
@@ -183,28 +177,22 @@
             <h2>My Skills</h2>
             <ul>
                 <li class="magnet-wrapper" data-padding="15" data-strength="2">
-                    <div class="magnet-inner skill-inner electric-border" data-color="#6366f1"><span
-                            style="position: relative; z-index: 5;">Search Engine Optimization (SEO)</span></div>
+                    <div class="magnet-inner skill-inner">Search Engine Optimization (SEO)</div>
                 </li>
                 <li class="magnet-wrapper" data-padding="15" data-strength="2">
-                    <div class="magnet-inner skill-inner electric-border" data-color="#ec4899"><span
-                            style="position: relative; z-index: 5;">Google Ads & Facebook Ads</span></div>
+                    <div class="magnet-inner skill-inner">Google Ads & Facebook Ads</div>
                 </li>
                 <li class="magnet-wrapper" data-padding="15" data-strength="2">
-                    <div class="magnet-inner skill-inner electric-border" data-color="#6366f1"><span
-                            style="position: relative; z-index: 5;">Social Media Marketing</span></div>
+                    <div class="magnet-inner skill-inner">Social Media Marketing</div>
                 </li>
                 <li class="magnet-wrapper" data-padding="15" data-strength="2">
-                    <div class="magnet-inner skill-inner electric-border" data-color="#ec4899"><span
-                            style="position: relative; z-index: 5;">Content Marketing</span></div>
+                    <div class="magnet-inner skill-inner">Content Marketing</div>
                 </li>
                 <li class="magnet-wrapper" data-padding="15" data-strength="2">
-                    <div class="magnet-inner skill-inner electric-border" data-color="#6366f1"><span
-                            style="position: relative; z-index: 5;">Email Marketing</span></div>
+                    <div class="magnet-inner skill-inner">Email Marketing</div>
                 </li>
                 <li class="magnet-wrapper" data-padding="15" data-strength="2">
-                    <div class="magnet-inner skill-inner electric-border" data-color="#ec4899"><span
-                            style="position: relative; z-index: 5;">Video Editing</span></div>
+                    <div class="magnet-inner skill-inner">Video Editing</div>
                 </li>
             </ul>
         </div>
@@ -215,7 +203,7 @@
         <div class="container">
             <h2>Services</h2>
             <div class="services-grid">
-                <div class="service-box electric-border" data-color="#6366f1">
+                <div class="service-box">
                     <h3>SEO Optimization</h3>
                     <p>Improve website ranking and organic traffic.</p>
                     <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
@@ -224,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-box electric-border" data-color="#ec4899">
+                <div class="service-box">
                     <h3>Paid Advertising</h3>
                     <p>High converting Google & Meta ad campaigns.</p>
                     <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
@@ -233,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-box electric-border" data-color="#6366f1">
+                <div class="service-box">
                     <h3>Social Media Growth</h3>
                     <p>Brand awareness and audience engagement strategy.</p>
                     <div class="magnet-wrapper" data-padding="40" data-strength="1.5">
@@ -323,7 +311,7 @@
             </div>
         </div>
 
-        <form class="contact-form electric-border" data-color="#ec4899">
+        <form class="contact-form">
             <input type="text" placeholder="Your Name" required>
             <input type="tel" placeholder="Your Number">
             <input type="email" placeholder="Your Email" required>
@@ -376,10 +364,8 @@
     <script src="background.js"></script>
     <script src="magnet.js"></script>
     <script src="nav.js"></script>
-    <script src="cursor.js"></script>
     <script src="velocity.js"></script>
     <script src="countup.js"></script>
-    <script src="electric-border.js"></script>
 </body>
 
 </html>

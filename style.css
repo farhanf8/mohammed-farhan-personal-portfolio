@@ -111,8 +111,6 @@ header {
     height: 350px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid var(--primary-color);
-    box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
     transition: var(--transition);
     animation: floatImage 5s ease-in-out infinite;
 }
@@ -120,8 +118,6 @@ header {
 .hero-image img:hover {
     animation-play-state: paused;
     transform: scale(1.05);
-    box-shadow: 0 0 50px rgba(236, 72, 153, 0.5);
-    border-color: var(--accent-color);
 }
 
 header h1 {
@@ -852,8 +848,13 @@ footer p {
         font-size: 1.5rem;
     }
 
+    header {
+        padding: 6rem 0;
+        /* Less vertical padding on mobile */
+    }
+
     header h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .cta-content h2 {
@@ -892,10 +893,140 @@ footer p {
 
     .footer-content-wrapper {
         align-items: center;
+        text-align: center;
     }
 
     .footer-socials-wrapper {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Container Padding */
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p,
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-professional-title {
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    /* Headings */
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Scroller */
+    .scroller span {
+        font-size: 2.5rem;
+    }
+
+    /* Stats */
+    .stat-box {
+        min-width: 140px;
+        /* Forces 2 columns on very small screens */
+        margin: 10px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-text {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    /* Process Timeline */
+    .process-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .timeline {
+        padding-left: 30px;
+        /* Reduced left padding */
+    }
+
+    .timeline::before {
+        left: 5px;
+        /* Moved line left */
+    }
+
+    .timeline .step::before {
+        left: -32px;
+        /* Adjusted glowing circle to align with new line position */
+        width: 12px;
+        height: 12px;
+    }
+
+    .timeline .step-title {
+        font-size: 1.2rem;
+    }
+
+    /* Contact Details */
+    .contact-info h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .contact-info h2::after {
+        margin: 0.5rem auto 0 auto;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .info-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-item .icon {
+        margin-right: 0;
+    }
+
+    /* Form */
+    .contact-form {
+        padding: 1.5rem;
+        gap: 15px;
+    }
+
+    /* Social Sidebar */
+    .social-sidebar a {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    /* Footer Navigation */
+    .footer-menu {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
     }
 }
